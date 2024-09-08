@@ -5,7 +5,7 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
-  ScrollView,
+  ScrollView
 } from "react-native";
 import {
   AdjustmentsHorizontalIcon,
@@ -25,11 +25,11 @@ export default function HomeScreen() {
     <>
       <SafeAreaView className=" bg-white">
         <View className="bg-white">
-          <View className=" mt-2 mb-3 mx-4 flex-row items-center justify-between">
+          <View className=" mt-10 mb-4 mx-4 flex-row items-center justify-between space-x-3">
               <TouchableOpacity>
                 <Image
                   source={require("../assets/images/IMG_0616.jpg")}
-                  className=" w-14 h-14 object-cover rounded-full"
+                  className=" w-14 h-14 object-contain rounded-full"
                 />
               </TouchableOpacity>
             <View className="flex-1">
@@ -54,3 +54,5 @@ export default function HomeScreen() {
     </>
   );
 }
+
+
