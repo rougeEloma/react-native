@@ -37,7 +37,7 @@ export default function HomeScreen() {
                 Salut Alino!
               </Text>
               <Text className="font-light text-xs text-gray-600">
-                Bonne apetit !
+                Une petite faim ?!
               </Text>
             </View>
             <TouchableOpacity
@@ -54,6 +54,21 @@ export default function HomeScreen() {
             <Text className=" font-extrabold text-4xl text-black">
               Ton plat préféré😋
             </Text>
+          </View>
+          {/* search Phrase */}
+          <View className=" m-1 mx-4 p-3 bg-gray-300 rounded-xl mb-3 shadow-lg">
+            <TouchableOpacity className=" absolute top-2 left-2">
+              <MagnifyingGlassIcon size={24} color="black" />
+            </TouchableOpacity>
+            <TextInput
+              placeholder="Search Restaurant and Dishes,..."
+              placeholderTextColor="black"
+              keyboardType="default"
+              className=" placeholder:px-8"
+            />
+            <TouchableOpacity className="absolute top-2 right-2 border-l px-1">
+              <AdjustmentsHorizontalIcon size={24} color="black" />
+            </TouchableOpacity>
           </View>
         </View>
       </SafeAreaView>
