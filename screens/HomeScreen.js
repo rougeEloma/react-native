@@ -49,6 +49,12 @@ export default function HomeScreen() {
               <TrashIcon size={22} color="black" />
             </TouchableOpacity>
           </View>
+          <View className=" mx-4 mb-3">
+            <Text className=" font-thin text-4xl text-black">Commandes</Text>
+            <Text className=" font-extrabold text-4xl text-black">
+              Ton plat préféré😋
+            </Text>
+          </View>
         </View>
       </SafeAreaView>
     </>
