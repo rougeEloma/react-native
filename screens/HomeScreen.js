@@ -72,6 +72,29 @@ export default function HomeScreen() {
           </View>
         </View>
       </SafeAreaView>
+      {/* menu, categories and dishes section */}
+      <ScrollView vertical showsVerticalScrollIndicator={false}>
+        <View className="mx-4 mt-2 mb-2">
+          <Text className=" font-extrabold text-[#f19c13] text-lg">
+            Catégories
+          </Text>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            className=" mt-2"
+          >
+            <Text className="  text-[#2d2d2d] text-lg">
+              ##Dish Categories
+            </Text>
+          </ScrollView>
+          {/* menu */}
+          <View className=" mt-1 mb-10">
+            <Text className="  text-[#2d2d2d] text-lg">
+              ##Featured Items
+            </Text>
+          </View>
+        </View>
+      </ScrollView>
     </>
   );
 }
