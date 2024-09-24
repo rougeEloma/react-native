@@ -105,22 +105,28 @@ export default function HomeScreen() {
       <ScrollView vertical showsVerticalScrollIndicator={false}>
         <View className="mx-4 mt-2 mb-2">
           <Text className=" font-extrabold text-[#f19c13] text-lg">
-            Catégories
+            Categories
           </Text>
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
             className=" mt-2"
           >
-            <Text className="  text-[#2d2d2d] text-lg">
-              ##Dish Categories
-            </Text>
+            {categories.map((category) => (
+              <CategoriesItem key={category._id} name={category.name} />
+            ))}
           </ScrollView>
           {/* menu */}
           <View className=" mt-1 mb-10">
-            <Text className="  text-[#2d2d2d] text-lg">
-              ##Featured Items
-            </Text>
+            <View>
+              {featured.map((featured) => (
+                <FeaturedItems
+                  key={featured._id}
+                  id={featured._id}
+                  featured={featured}
+                />
+              ))}
+            </View>
           </View>
         </View>
       </ScrollView>
