@@ -1,29 +1,29 @@
 export default {
   name: 'dish',
-  title: 'Dish',
+  title: 'Plats',
   type: 'document',
   fields: [
     {
       name: 'name',
       type: 'string',
-      title: 'Name of dish',
+      title: 'Namdu plat',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'short_description',
       type: 'string',
-      title: 'Short description of dish',
+      title: 'Court description du plat',
       validation: (Rule) => Rule.max(500),
     },
     {
       name: 'price',
       type: 'number',
-      title: 'Price of dish',
+      title: 'Prix du plat',
     },
     {
       name: 'image',
       type: 'image',
-      title: 'Image of dish',
+      title: 'Image du plat',
     },
   ],
 }

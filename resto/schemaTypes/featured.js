@@ -1,18 +1,18 @@
 export default {
   name: 'featured',
   type: 'document',
-  title: 'Featured Menu categories',
+  title: 'Categories mise en avant',
   fields: [
     {
       name: 'name',
       type: 'string',
-      title: 'Featured Category Name',
+      title: 'Nom de la Categorie mise en avant',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'short_description',
       type: 'string',
-      title: 'Short description',
+      title: 'Court description mise en avant',
       validation: (Rule) => Rule.max(500),
     },
     {
