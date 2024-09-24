@@ -22,7 +22,7 @@ export default function FeaturedItems({ id, featured }) {
       )
       .then((data) => setRestaurants(data?.restaurants));
   }, [id]);
-  console.log("Restaurants Items", restaurants);
+  // console.log("Restaurants Items", restaurants);
   return (
     <View className=" mt-5">
       <Text className=" font-bold text-lg text-[#f19c13]">{featured.name}</Text>

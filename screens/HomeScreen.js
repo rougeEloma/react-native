@@ -13,16 +13,16 @@ import {
   MagnifyingGlassIcon,
   TrashIcon,
 } from "react-native-heroicons/solid";
-// import CategoriesItem from "../components/CategoriesItem";
+import CategoriesItem from "../components/CategoriesItem";
 import sanityClient from "../sanity";
-// import FeaturedItems from "../components/FeaturedItems";
-import { useNavigation } from "@react-navigation/native";
-import { useSelector } from "react-redux";
-import { selectCartItems } from "../slice/CartSlice";
+import FeaturedItems from "../components/FeaturedItems";
+// import { useNavigation } from "@react-navigation/native";
+// import { useSelector } from "react-redux";
+// import { selectCartItems } from "../slice/CartSlice";
 
 export default function HomeScreen() {
-  const navigation = useNavigation();
-  const items = useSelector(selectCartItems);
+  // const navigation = useNavigation();
+  // const items = useSelector(selectCartItems);
   const [categories, setCategories] = useState([]);
   const [featured, setFeatured] = useState([]);
 
