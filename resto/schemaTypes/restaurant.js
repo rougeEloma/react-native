@@ -6,46 +6,46 @@ export default {
     {
       name: 'name',
       type: 'string',
-      title: 'Restaurant name',
+      title: 'Nom du restaurant',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'short_description',
       type: 'string',
-      title: 'Short description',
+      title: 'Court description',
       validation: (Rule) => Rule.max(500),
     },
     {
       name: 'image',
       type: 'image',
-      title: 'Image of the restaurant',
+      title: 'Image du restaurant',
     },
     {
       name: 'lat',
       type: 'number',
-      title: 'Latitude of the restaurant',
+      title: 'Latitude du restaurant',
     },
     {
       name: 'long',
       type: 'number',
-      title: 'Longitude of the restaurant',
+      title: 'Longitude du restaurant',
     },
     {
       name: 'address',
       type: 'string',
-      title: 'Restaurant address',
+      title: 'Adresse du estaurant',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'rating',
       type: 'number',
-      title: 'Enter a Rating from (1-5 Stars)',
+      title: 'Entrer une note (1-5 étoiles)',
       validation: (Rule) =>
-        Rule.required().min(1).max(5).error('Please enter a Rating from (1-5 Stars)'),
+        Rule.required().min(1).max(5).error('Veuillez entrer une note (1-5 étoiles)'),
     },
     {
       name: 'type',
-      title: 'Category',
+      title: 'Categorie',
       validation: (Rule) => Rule.required(),
       type: 'reference',
       to: [{type: 'category'}],
@@ -53,7 +53,7 @@ export default {
     {
       name: 'dishes',
       type: 'array',
-      title: 'Dishes from the restaurant',
+      title: 'Plats du restaurant',
       of: [
         {
           type: 'reference',
