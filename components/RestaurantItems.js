@@ -37,7 +37,7 @@ export default function RestaurantItems({
         })
       }
     >
-      <View className="mx-1 w-[250px] h-[220px] rounded-lg bg-white overflow-hidden">
+      <View className="mx-1 w-[250px] h-[225px] rounded-lg bg-white overflow-hidden">
         <Image
           source={{ uri: urlFor(image).url() }}
           className="w-full h-32 object-cover"

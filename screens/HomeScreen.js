@@ -54,7 +54,7 @@ export default function HomeScreen() {
     <>
       <SafeAreaView className=" bg-white">
         <View className="bg-white">
-          <View className=" mx-4 p-3 mt-3 mb-3 flex-row items-center justify-between space-x-3">
+          <View className=" mx-4 p-3 mt-7 mb-3 flex-row items-center justify-between space-x-3">
             <TouchableOpacity>
               <Image
                 source={require("../assets/images/IMG_0616.jpg")}
@@ -63,7 +63,7 @@ export default function HomeScreen() {
             </TouchableOpacity>
             <View className="flex-1">
               <Text className=" font-bold text-base text-gray-800">
-                Welcome Benny!
+                Salut Alain !
               </Text>
               <Text className="font-light text-xs text-gray-600">
                 Kigali - Rwanda
