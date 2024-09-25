@@ -16,13 +16,13 @@ import {
 import CategoriesItem from "../components/CategoriesItem";
 import sanityClient from "../sanity";
 import FeaturedItems from "../components/FeaturedItems";
-// import { useNavigation } from "@react-navigation/native";
-// import { useSelector } from "react-redux";
-// import { selectCartItems } from "../slice/CartSlice";
+import { useNavigation } from "@react-navigation/native";
+import { useSelector } from "react-redux";
+import { selectCartItems } from "../slice/CartSlice";
 
 export default function HomeScreen() {
-  // const navigation = useNavigation();
-  // const items = useSelector(selectCartItems);
+  const navigation = useNavigation();
+  const items = useSelector(selectCartItems);
   const [categories, setCategories] = useState([]);
   const [featured, setFeatured] = useState([]);
 
@@ -54,34 +54,35 @@ export default function HomeScreen() {
     <>
       <SafeAreaView className=" bg-white">
         <View className="bg-white">
-          <View className=" mt-10 mb-4 mx-4 flex-row items-center justify-between space-x-3">
-              <TouchableOpacity>
-                <Image
-                  source={require("../assets/images/IMG_0616.jpg")}
-                  className=" w-14 h-14 object-contain rounded-full"
-                />
-              </TouchableOpacity>
+          <View className=" mx-4 p-3 mt-3 mb-3 flex-row items-center justify-between space-x-3">
+            <TouchableOpacity>
+              <Image
+                source={require("../assets/images/IMG_0616.jpg")}
+                className=" w-14 h-14 object-contain rounded-full"
+              />
+            </TouchableOpacity>
             <View className="flex-1">
               <Text className=" font-bold text-base text-gray-800">
-                Salut Alino!
+                Welcome Benny!
               </Text>
               <Text className="font-light text-xs text-gray-600">
-                Une petite faim ?!
+                Kigali - Rwanda
               </Text>
             </View>
             <TouchableOpacity
+              onPress={() => navigation.navigate("Cart")}
               className=" p-3 flex items-center justify-center rounded-full bg-gray-300"
             >
               <Text className=" absolute top-0 left-3 font-bold text-red-500">
-                0
+                {items.length}
               </Text>
               <TrashIcon size={22} color="black" />
             </TouchableOpacity>
           </View>
           <View className=" mx-4 mb-3">
-            <Text className=" font-thin text-4xl text-black">Commandes</Text>
+            <Text className=" font-thin text-4xl text-black">Order Your</Text>
             <Text className=" font-extrabold text-4xl text-black">
-              Ton plat préféré😋
+              Favorite Food😋
             </Text>
           </View>
           {/* search Phrase */}
@@ -133,5 +134,3 @@ export default function HomeScreen() {
     </>
   );
 }
-
-
