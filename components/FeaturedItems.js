@@ -25,7 +25,7 @@ export default function FeaturedItems({ id, featured }) {
   // console.log("Restaurants Items", restaurants);
   return (
     <View className=" mt-5">
-      <Text className=" font-bold text-lg text-[#f19c13]">{featured.name}</Text>
+      <Text className=" font-bold text-lg text-[#1c506b]">{featured.name}</Text>
       <Text className="text-gray-600 font-light">
         {featured.short_description}
       </Text>

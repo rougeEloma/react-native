@@ -66,7 +66,7 @@ export default function HomeScreen() {
                 Salut Alain !
               </Text>
               <Text className="font-light text-xs text-gray-600">
-                Kigali - Rwanda
+                Mont Ngafula - Maman Mobutu
               </Text>
             </View>
             <TouchableOpacity
@@ -80,9 +80,9 @@ export default function HomeScreen() {
             </TouchableOpacity>
           </View>
           <View className=" mx-4 mb-3">
-            <Text className=" font-thin text-4xl text-black">Order Your</Text>
-            <Text className=" font-extrabold text-4xl text-black">
-              Favorite Food😋
+            <Text className=" font-thin text-4xl text-[#163646]">Commandez vos</Text>
+            <Text className=" font-extrabold text-4xl text-[#163646]">
+              plats préférés😋
             </Text>
           </View>
           {/* search Phrase */}
@@ -91,8 +91,8 @@ export default function HomeScreen() {
               <MagnifyingGlassIcon size={24} color="black" />
             </TouchableOpacity>
             <TextInput
-              placeholder="Search Restaurant and Dishes,..."
-              placeholderTextColor="black"
+              placeholder="Rechercher restaurants, plats, etc."
+              placeholderTextColor="gray"
               keyboardType="default"
               className=" placeholder:px-8"
             />
@@ -105,7 +105,7 @@ export default function HomeScreen() {
       {/* menu, categories and dishes section */}
       <ScrollView vertical showsVerticalScrollIndicator={false}>
         <View className="mx-4 mt-2 mb-2">
-          <Text className=" font-extrabold text-[#f19c13] text-lg">
+          <Text className=" font-extrabold text-[#f17e5e] text-lg">
             Categories
           </Text>
           <ScrollView
@@ -117,7 +117,7 @@ export default function HomeScreen() {
               <CategoriesItem key={category._id} name={category.name} />
             ))}
           </ScrollView>
-          {/* menu */}
+          {/* featured */}
           <View className=" mt-1 mb-10">
             <View>
               {featured.map((featured) => (
