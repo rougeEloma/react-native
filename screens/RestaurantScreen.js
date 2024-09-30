@@ -81,7 +81,7 @@ export default function RestaurantScreen() {
               {genre}
             </Text>
             <MapPinIcon size={18} color="gray" />
-            <Text className=" font-medium text-gray-500 text-xs">NearBy</Text>
+            <Text className=" font-medium text-gray-500 text-xs">Proche de</Text>
             <Text className=" font-bold text-gray-600">
               {address.length > 20 ? address.slice(0, 20) + "..." : address}
             </Text>
@@ -96,7 +96,7 @@ export default function RestaurantScreen() {
                 <Text className="text-[12px] text-gray-600 font-normal">
                   {description.slice(0, 150)}
                   <Text style={{ fontWeight: "bold", color: "black" }}>
-                    ...More
+                    ...Plus
                   </Text>
                 </Text>
               </TouchableOpacity>
@@ -105,7 +105,7 @@ export default function RestaurantScreen() {
           <TouchableOpacity className="mt-5 border-t border-b border-gray-700 p-3 flex-row items-center justify-between">
             <QuestionMarkCircleIcon size={22} color="gray" />
             <Text className=" font-bold text-base text-gray-800">
-              Have a Food Allergy?
+              Besoin d'aide ?
             </Text>
             <ChevronRightIcon size={22} color="#f19c13" />
           </TouchableOpacity>
@@ -128,7 +128,7 @@ export default function RestaurantScreen() {
           </View>
         </View>
       </ScrollView>
-      0
+      
       {/* {items.length > 0 && <CartIcon />} */}
     </>
   );

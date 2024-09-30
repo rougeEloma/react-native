@@ -23,7 +23,7 @@ export default function CartIcon() {
           View Cart
         </Text>
         <Text className="text-lg text-white font-extrabold">
-          RF {""} {TotalCart.toLocaleString()}
+          USD {""} {TotalCart.toLocaleString()}
         </Text>
       </TouchableOpacity>
     </View>
