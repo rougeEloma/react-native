@@ -39,7 +39,7 @@ export default function DishRow({ id, name, image, description, price }) {
               <Text className=" mt-1 text-xs text-gray-500">
                 {description.slice(0, 100)}
                 <Text style={{ fontWeight: "bold", color: "black" }}>
-                  ...More
+                  ...Plus
                 </Text>
               </Text>
             </TouchableOpacity>
@@ -47,7 +47,7 @@ export default function DishRow({ id, name, image, description, price }) {
 
           <View className="mt-2">
             <Text className=" font-extrabold text-sm text-gray-900">
-              <Text className=" font-bold text-gray-600 text-sm">Rf</Text>
+              <Text className=" font-bold text-gray-600 text-sm">USD</Text>
               {""} {price.toLocaleString()}
             </Text>
           </View>
