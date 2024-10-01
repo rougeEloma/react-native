@@ -38,15 +38,15 @@ export default function CartScreen() {
 
   return (
     <SafeAreaView>
-      <View className="bg-white p-3 shadow-md mb-4">
-        <Text className="text-center text-xl font-extrabold">Cart</Text>
+      <View className="bg-white p-3 shadow-md mb-4 mt-6">
+        <Text className="text-center text-xl font-extrabold">Panier</Text>
         <Text className="text-center text-gray-500 text-xs font-medium">
           {items.length > 0
-            ? `You have ${items.length} items in the cart`
-            : "Your Cart is empty.."}
+            ? `Vous avez ${items.length} plats dans votre panier`
+            : "Votre panier est vide..."}
         </Text>
         <Text className="text-center text-gray-500 text-xs font-medium mt-1">
-          {items.length > 0 ? restaurant?.name : "No restaurant"}
+          {items.length > 0 ? restaurant?.name : "Pas de restaurant"}
         </Text>
         <TouchableOpacity
           onPress={() => navigation.goBack()}
@@ -63,11 +63,11 @@ export default function CartScreen() {
             className=" w-10 h-10 rounded-full object-contain"
           />
           <Text className="font-bold text-black text-sm">
-            Deliver in 40 - 60 minutes
+          Livraison en 40 à 60 minutes
           </Text>
         </View>
         <TouchableOpacity>
-          <Text className="font-extrabold text-[#f19c13] text-sm">Change</Text>
+          <Text className="font-extrabold text-[#f19c13] text-sm">Modifier</Text>
         </TouchableOpacity>
       </View>
       <ScrollView
@@ -89,13 +89,13 @@ export default function CartScreen() {
             />
             <Text className="flex-1 font-semibold">{items[0]?.name}</Text>
             <Text className=" text-gray-700 font-extrabold">
-              RF {items[0]?.price.toLocaleString()}
+              USD {items[0]?.price.toLocaleString()}
             </Text>
             <TouchableOpacity
               onPress={() => dispatch(removeFromCart({ id: key }))}
             >
               <Text className="font-extrabold text-xs text-[#f19c13]">
-                Delete
+                Supprimer
               </Text>
             </TouchableOpacity>
           </View>
@@ -104,21 +104,21 @@ export default function CartScreen() {
       {/* total amount */}
       <View className="bg-white p-5 my-4 shadow-sm space-y-4">
         <View className="flex-row justify-between">
-          <Text className=" font-medium text-gray-500">Subtotal</Text>
+          <Text className=" font-medium text-gray-500">sous-total</Text>
           <Text className="font-extrabold text-gray-700">
-            RF {""} {TotalCart.toLocaleString()}
+          USD {""} {TotalCart.toLocaleString()}
           </Text>
         </View>
         <View className="flex-row justify-between">
-          <Text className=" font-medium text-gray-500">Delivery Fess</Text>
+          <Text className=" font-medium text-gray-500">Frais de livraison</Text>
           <Text className="font-extrabold text-gray-700">
-            RF {""} {items.length > 0 ? DeliveryFees : "0"}
+          USD {""} {items.length > 0 ? DeliveryFees : "0"}
           </Text>
         </View>
         <View className="flex-row justify-between border-t border-gray-400 pt-3">
-          <Text className=" font-extrabold text-gray-700">Total Amount</Text>
+          <Text className=" font-extrabold text-gray-700">Prix total</Text>
           <Text className="font-extrabold text-gray-800">
-            RF {""} {items.length > 0 ? totalAmount.toLocaleString() : "0"}
+          USD {""} {items.length > 0 ? totalAmount.toLocaleString() : "0"}
           </Text>
         </View>
         <TouchableOpacity
@@ -126,7 +126,7 @@ export default function CartScreen() {
           className=" bg-[#f19c13] p-3 rounded-lg mx-2 mb-3"
         >
           <Text className=" font-extrabold text-white text-base text-center">
-            Place Order
+          Commander
           </Text>
         </TouchableOpacity>
       </View>
