@@ -104,7 +104,7 @@ export default function CartScreen() {
       {/* total amount */}
       <View className="bg-white p-5 my-4 shadow-sm space-y-4">
         <View className="flex-row justify-between">
-          <Text className=" font-medium text-gray-500">sous-total</Text>
+          <Text className=" font-medium text-gray-500">Sous-total</Text>
           <Text className="font-extrabold text-gray-700">
           USD {""} {TotalCart.toLocaleString()}
           </Text>
