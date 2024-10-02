@@ -25,7 +25,7 @@ export default function CartScreen() {
   const dispatch = useDispatch();
   const [groupedItemsInCart, setGroupedItemsInCart] = useState([]);
   const TotalCart = useSelector(selectCartTotal);
-  const DeliveryFees = 5000;
+  const DeliveryFees = 2;
   const totalAmount = TotalCart + DeliveryFees;
 
   useEffect(() => {

@@ -115,7 +115,7 @@ export default function RestaurantScreen() {
           <Text className=" font-extrabold text-[#f19c13] text-lg">Menu</Text>
           {/* dish row */}
           <View className="mt-2">
-            {/* {dishes.map((dish) => (
+            {dishes.map((dish) => (
               <DishRow
                 key={dish._id}
                 id={dish._id}
@@ -124,7 +124,7 @@ export default function RestaurantScreen() {
                 price={dish.price}
                 image={dish.image}
               />
-            ))} */}
+            ))}
           </View>
         </View>
       </ScrollView>
