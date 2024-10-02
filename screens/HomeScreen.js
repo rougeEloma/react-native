@@ -11,7 +11,7 @@ import React, { useEffect, useState } from "react";
 import {
   AdjustmentsHorizontalIcon,
   MagnifyingGlassIcon,
-  TrashIcon,
+  ShoppingCartIcon,
 } from "react-native-heroicons/solid";
 import CategoriesItem from "../components/CategoriesItem";
 import sanityClient from "../sanity";
@@ -53,30 +53,30 @@ export default function HomeScreen() {
   return (
     <>
       <SafeAreaView className=" bg-white">
-        <View className="bg-white">
+        <View className="bg-[#f17e5e]">
           <View className=" mx-4 p-3 mt-7 mb-3 flex-row items-center justify-between space-x-3">
             <TouchableOpacity>
               <Image
-                source={require("../assets/images/IMG_0616.jpg")}
+                source={require("../assets/images/user_profile_image.png")}
                 className=" w-14 h-14 object-contain rounded-full"
               />
             </TouchableOpacity>
             <View className="flex-1">
-              <Text className=" font-bold text-base text-gray-800">
+              <Text className=" font-bold text-base text-white">
                 Salut Alain !
               </Text>
-              <Text className="font-light text-xs text-gray-600">
+              <Text className="font-light text-xs text-gray-200">
                 Mont Ngafula - Maman Mobutu
               </Text>
             </View>
             <TouchableOpacity
               onPress={() => navigation.navigate("Cart")}
-              className=" p-3 flex items-center justify-center rounded-full bg-gray-300"
+              className=" p-3 flex items-center justify-center rounded-full bg-white"
             >
-              <Text className=" absolute top-0 left-3 font-bold text-red-500">
+              <ShoppingCartIcon size={22} color="black" />
+              <Text className=" absolute top-0 left-2 font-bold text-lg text-red-500">
                 {items.length}
               </Text>
-              <TrashIcon size={22} color="black" />
             </TouchableOpacity>
           </View>
           <View className=" mx-4 mb-3">
@@ -86,7 +86,7 @@ export default function HomeScreen() {
             </Text>
           </View>
           {/* search Phrase */}
-          <View className=" m-1 mx-4 p-3 bg-gray-300 rounded-xl mb-3 shadow-lg">
+          <View className=" m-1 mx-4 p-3 bg-white rounded-xl mb-3 shadow-lg">
             <TouchableOpacity className=" absolute top-2 left-2">
               <MagnifyingGlassIcon size={24} color="black" />
             </TouchableOpacity>
