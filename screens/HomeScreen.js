@@ -80,8 +80,8 @@ export default function HomeScreen() {
             </TouchableOpacity>
           </View>
           <View className=" mx-4 mb-3">
-            <Text className=" font-thin text-4xl text-[#163646]">Commandez vos</Text>
-            <Text className=" font-extrabold text-4xl text-[#163646]">
+            <Text className=" font-thin text-4xl text-[#1a4155]">Commandez vos</Text>
+            <Text className=" font-extrabold text-4xl text-[#1a4155]">
               plats préférés😋
             </Text>
           </View>

@@ -62,7 +62,7 @@ export default function RestaurantScreen() {
           onPress={() => navigation.goBack()}
           className=" absolute z-50 p-2 bg-white rounded-full flex items-center justify-center left-3 top-14"
         >
-          <ArrowLeftIcon color="#f19c13" size={20} />
+          <ArrowLeftIcon color="#f17e5e" size={20} />
         </TouchableOpacity>
 
         <Image
@@ -70,7 +70,7 @@ export default function RestaurantScreen() {
           className="w-full h-60 object-cover"
         />
         <View className=" bg-white p-4">
-          <Text className=" font-bold text-lg text-gray-800">{name}</Text>
+          <Text className=" font-bold text-lg text-[#1a4155]">{name}</Text>
           <View className=" flex-row items-center space-x-2 mt-1">
             <StarIcon size={18} color="#f19c13" />
             <Text className=" font-extrabold text-sm text-[#f19c13]">
@@ -107,12 +107,12 @@ export default function RestaurantScreen() {
             <Text className=" font-bold text-base text-gray-800">
               Besoin d'aide ?
             </Text>
-            <ChevronRightIcon size={22} color="#f19c13" />
+            <ChevronRightIcon size={22} color="#f17e5e" />
           </TouchableOpacity>
         </View>
         {/* dish phrase */}
         <View className="mx-3 mt-3 pb-32">
-          <Text className=" font-extrabold text-[#f19c13] text-lg">Menu</Text>
+          <Text className=" font-extrabold text-[#f17e5e] text-lg">Menu</Text>
           {/* dish row */}
           <View className="mt-2">
             {dishes.map((dish) => (

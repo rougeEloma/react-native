@@ -14,7 +14,7 @@ export default function PreparingScreen() {
   }, []);
 
   return (
-    <SafeAreaView className="flex-1 justify-center items-center bg-[#f19c13]">
+    <SafeAreaView className="flex-1 justify-center items-center bg-[#f17e5e]">
       <Animatable.Image
         source={require("../assets/images/delivery.gif")}
         className="w-96 h-96"
@@ -26,7 +26,7 @@ export default function PreparingScreen() {
         iterationCount={3}
         className=" text-base my-10 text-white font-extrabold text-center"
       >
-        Waiting for Restaurant to approve your order!
+        En attente que le restaurant approuve votre commande !
       </Animatable.Text>
       <Progress.CircleSnail color="white" size={60} indeterminate={true} />
     </SafeAreaView>

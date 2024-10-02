@@ -29,7 +29,7 @@ export default function DishRow({ id, name, image, description, price }) {
     <View className="bg-white rounded-lg p-4 my-2">
       <View className=" flex-row items-center justify-between space-x-2">
         <View className=" flex-1 space-x-1">
-          <Text className=" font-extrabold text-base text-gray-800">
+          <Text className=" font-extrabold text-base text-[#1a4155]">
             {name}
           </Text>
           {showFullDescription ? (
@@ -53,7 +53,7 @@ export default function DishRow({ id, name, image, description, price }) {
           </View>
           <View className=" mt-2 flex-row items-center space-x-2">
             <TouchableOpacity onPress={removeItemFromCart}>
-              <View className=" bg-[#f19c13] rounded-full p-[3px]">
+              <View className=" bg-[#f17e5e] rounded-full p-[3px]">
                 <MinusIcon size={18} color="white" />
               </View>
             </TouchableOpacity>
@@ -61,7 +61,7 @@ export default function DishRow({ id, name, image, description, price }) {
               {items.length}
             </Text>
             <TouchableOpacity onPress={addItemsToCart}>
-              <View className=" bg-[#f19c13] rounded-full p-[3px]">
+              <View className=" bg-[#f17e5e] rounded-full p-[3px]">
                 <PlusIcon size={18} color="white" />
               </View>
             </TouchableOpacity>

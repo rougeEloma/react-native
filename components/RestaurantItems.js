@@ -42,7 +42,7 @@ export default function RestaurantItems({
           source={{ uri: urlFor(image).url() }}
           className="w-full h-32 object-cover"
         />
-        <Text className=" mx-3 font-bold text-base text-gray-800 mt-2">
+        <Text className=" mx-3 font-bold text-base text-[#1c506b] mt-2">
           {name}
         </Text>
         <View className=" flex-row items-center space-x-2 mx-4 mt-1">
